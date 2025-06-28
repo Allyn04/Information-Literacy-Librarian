@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Readers Library | Home</title>
+
+  <!-- ‑‑‑ gaya pink + purple dikongsi di setiap halaman ‑‑‑ -->
+  <style>
+    body{margin:0;font-family:'Poppins',sans-serif;background:#ffe4f2;color:#333;}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+    header{background:#ff85b3;padding:30px 20px;text-align:center;color:#fff}
+    .logo-container{display:flex;justify-content:center;gap:30px;margin-bottom:15px}
+    .logo-container img{width:80px;height:80px;object-fit:contain;animation:float 3s ease-in-out infinite}
+    nav{background:#ffc2d1;display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:10px}
+    nav a{text-decoration:none;color:#333;font-weight:bold}
+    nav a:hover{color:#ff4d88}
+    section{padding:40px 25px;max-width:900px;margin:auto}
+    .card{background:#ffd9e8;padding:25px;border-radius:15px;box-shadow:2px 2px 8px rgba(0,0,0,.1)}
+    footer{background:#ff85b3;color:#fff;text-align:center;padding:15px;margin-top:40px}
+    /* chat button & box */
+    .chat-btn{position:fixed;bottom:20px;right:20px;background:#ff85b3;color:#fff;border:none;padding:12px 18px;border-radius:25px;cursor:pointer;z-index:1000}
+    .chat-box{display:none;position:fixed;bottom:70px;right:20px;width:300px;background:#fff0f5;border:2px solid #ff85b3;border-radius:15px;padding:15px;z-index:1000;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+    .chat-box textarea{width:100%;padding:8px;border-radius:8px;margin-top:8px;border:1px solid #ccc}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="ill.png" alt="logo1"width="300" height="auto">
+      <img src="lrl.png" alt="Logo 2">
+    </div>
+    <h1>Little Readers Library</h1>
+    <p>Your Friendly Information Literacy Librarian</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">AboutMe</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="testimonial.html">Testimonial</a>
+    <a href="contact.html">Contact</a>
+    <a href="meetme.html">Why Choose Me</a>
+    <a href="informationliteracy.html">Information Literacy</a>
+
+  </nav>
+
+  <section id="home">
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>Hi, I’m <strong>Alia</strong>, an Information Literacy Librarian. I help children and teens discover how to find, evaluate, and use information wisely while having fun reading! Explore the links above to learn more about me and my programmes.</p>
+    </div>
+  </section>
+
+  <button class="chat-btn" onclick="toggleChat()">Click here to chat!</button>
+
+  <div id="chatBox" class="chat-box">
+    <strong>💬 Librarian Chat</strong>
+    <p>Hi! I'm Alia. How can I help?</p>
+    <textarea rows="3" placeholder="Type your message…"></textarea>
+    <button style="margin-top:8px;background:#ff4d88;color:#fff;border:none;padding:8px 12px;border-radius:8px">Send</button>
+  </div>
+
+  <script>
+    function toggleChat(){const c=document.getElementById('chatBox');c.style.display=c.style.display==='none'?'block':'none';}
+  </script>
+
+  <footer>© 2025 Little Readers Library · Librarian Alia 🌸</footer>
+</body>
+</html>

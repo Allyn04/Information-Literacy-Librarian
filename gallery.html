@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Little Readers Library</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4f2;
+      color: #333;
+    }
+    header {
+      background-color: #d8b4f8;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background-color: #fbd0e5;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border: 2px solid #d8b4f8;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 6px;
+      color: #555;
+    }
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #b47aff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    a.back:hover {
+      background-color: #9c5ce0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gallery</h1>
+    <p>Sweet Moments with My Little Readers 📸💞</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Captured Moments</h2>
+      <p>Every session is a beautiful memory. Here are some snapshots of my journey as an information literacy librarian – from reading circles to creative workshops!</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="workshop.jpg" alt="Workshop Activity">
+          <div class="caption">👩🏻‍🏫 Teaching how to search smartly on the Internet</div>
+        </div>
+        <div class="gallery-item">
+          <img src="1.jpg" alt="Reading Session">
+          <div class="caption">📚 Storytime session with excited little readers</div>
+        </div>
+        <div class="gallery-item">
+          <img src="group learning.jpg" alt="Group Learning">
+          <div class="caption">💡 Critical thinking game during Digital Literacy Day</div>
+        </div>
+        <div class="gallery-item">
+          <img src="library booth.jpg" alt="Library Booth">
+          <div class="caption">🎨 Info Booth: Students exploring safe online habits</div>
+        </div>
+        <div class="gallery-item">
+          <img src="drawing.jpg" alt="Kids Drawing">
+          <div class="caption">🖍️ Drawing competition: “What is your favorite book?”</div>
+        </div>
+        <div class="gallery-item">
+          <img src="learning computer.jpg" alt="Kids Learning Computer">
+          <div class="caption">🖥️ Learning how to use the library’s e-catalogue</div>
+        </div>
+      </div>
+
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
